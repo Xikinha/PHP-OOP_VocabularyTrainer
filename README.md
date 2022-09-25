@@ -1,0 +1,3 @@
+# Vocabulary trainer
+**PHP OOP**<br />
+Simple vocabulary trainer coded in PHP OOP. A user can select between 5 languages and is redirected to an exercise window for the selected language. A random word in the selected language or in English is displayed, and the user has to translate the word. If the answer is correct, the user earns an owl. If the answer is wrong, the user loses a heart. When all hearts are lost, the user is redirected to the language selection page.

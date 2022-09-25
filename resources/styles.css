@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  text-align: center;
+}
+
+#trainer-heading {
+  font-family: 'Graduate', cursive;
+  font-size: 2rem;
+  margin-top: 6rem;
+}
+
+#selection-heading {
+  margin: 3.5rem 0 1.5rem 0;
+}
+
+form {
+  justify-content: center;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  height: 2.5rem;
+  width: 15rem;
+  padding: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input:hover {
+  border: 1px solid black;
+  background-color: lightcoral;
+}
+
+#guessField {
+  margin: 2.5rem 2rem;
+}
+
+#btn-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 15rem;
+  background-color: lightcoral;
+  border: 0 solid white;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .75rem;
+  margin-top: 1rem;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  transform: rotate(-2.5deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+    
+#btn-form:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 0.25rem;
+  left: 0.25rem;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+  
+#btn-form:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+#language {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.btnLanguage {
+  width: 6rem;
+  height: 5rem;
+  background-color: white;
+  border: none;
+  margin: 0.5rem;
+}
+.btnLanguage img {
+  margin-bottom: 0.5rem;
+}
+.btnLanguage:hover {
+  background-color: lightcoral;
+  font-weight: bold;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#updates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.update {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.update img{
+  margin-left: 0.5rem;
+}
+
+#foreignWordBox {
+  display: flex;
+  justify-content: center;
+}
+
+#foreignWord {
+  width: 8rem;
+  background: linear-gradient(
+    to bottom,
+    transparent 85%,
+    lightcoral 15%
+  );
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#message {
+  margin-top: 2rem;
+}
+
+#message {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+
+  #btn-home {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+
+  #trainer-heading {
+    font-size: 3rem;
+  }
+
+  #language {
+    flex-wrap: nowrap;
+  }
+}
